@@ -14,6 +14,7 @@ env:
 
 jobs:
   setup-build-release:
+    environment: test_env
     name: Setup Build and Release
     runs-on: ubuntu-latest
     env:
