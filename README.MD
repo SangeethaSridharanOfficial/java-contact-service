@@ -5,7 +5,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: release-contact-service
+  name: contact-service
   labels:
     helm.sh/chart: contact-service-0.1.0
     app.kubernetes.io/name: contact-service
@@ -23,7 +23,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: release-contact-service
+                name: contact-service
                 port:
                   number: 80
 
